@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formularios - Esportes</title>
+</head>
+<body>
+    <div class="containerForms">
+        <form action="formulario.html" method="get" class="formularioGeral">
+            <fieldset>
+                <legend>Cadastro Geral</legend>
+                <div class="dadosPrincipais">
+                        <fieldset class="fieldSets">
+                            <legend>Dados Pessoais</legend>
+                                <label for="name">Nome completo:</label><br>
+                                <input type="text" id="name" name="name" required placeholder="Digite seu nome" ><br><br>
+        
+                                <label for="profi">Profissao:</label><br>
+                                <input list="Profissao" name="job" id="job" placeholder="Sua Profissão">
+                                <datalist id="Profissao">
+                                  <option value="Fisioculturista">
+                                  <option value="Urulogista">
+                                  <option value="Professor">
+                                  <option value="Analista de TI">
+                                  <option value="Executivo da Natura">
+                                </datalist>
+                        </fieldset>
+                        <fieldset class="fieldSets">
+                            <legend>Localização</legend>
+                                <label for="email">Email:</label><br>
+                                <input type="email" id="email" name="email"><br><br>
+                                <label for="street">Rua:</label><br>
+                                <input type="text" id="street" name="street">
+                        </fieldset>
+                </div>
+                 
+                <fieldset>
+                    <legend>Faixa etária</legend>
+                    <div class="containerRadios">
+                        <div class="radio">
+                            <input type="radio" id="age1" name="age" value="1">
+                            <label for="age1">até 20 anos</label><br>
+                            <input type="radio" id="age2" name="age" value="2">
+                            <label for="age2">mais de 20 até 30 anos</label> <br>
+                            <input type="radio" id="age3" name="age" value="3">
+                            <label for="age3">mais de 30 até 40 anos</label><br>
+                        </div>
+                        <div class="radio">                                               
+                            <input type="radio" id="age4" name="age" value="4">
+                            <label for="age4">mais de 40 até 50 anos</label><br>
+                            <input type="radio" id="age5" name="age" value="5">
+                            <label for="age5">mais de 50 até 60 anos</label><br>
+                            <input type="radio" id="age6" name="age" value="6">
+                            <label for="age6">mais de 60 anos</label><br>
+                        </div>
+                    </div>
+                   
+                </fieldset>
+                <fieldset>
+                    <legend>Esportes que pratica</legend>
+                        <input type="checkbox" id="sport" name="sport1" value="Judo">
+                        <label for="sport1">Judô</label>
+                        <input type="checkbox" id="sport" name="sport2" value="Boxe">
+                        <label for="sport2">Boxe</label>
+                        <input type="checkbox" id="sport" name="sport3" value="Futebol">
+                        <label for="sport3">Futebol</label>
+                        <input type="checkbox" id="sport" name="sport4" value="Vôlei">
+                        <label for="sport4">Vôlei</label>
+                        <input type="checkbox" id="sport" name="sport5" value="Vôlei de Praia">
+                        <label for="sport5">Vôlei de Praia</label>
+                        <input type="checkbox" id="sport" name="sport6" value="Natação">
+                        <label for="sport6">Natação</label>
+                        <input type="checkbox" id="sport" name="sport7" value="Tenis">
+                        <label for="sport7">Tênis de mesa</label>
+                </fieldset>
+               
+
+            </fieldset>
+            <fieldset>
+                <legend>Comentário</legend>
+                    <label for="coment">Mensagem:</label>
+                    <br />
+                    <textarea name="coment" id="coment" cols="100" rows="10"></textarea>
+            </fieldset>
+            <br><br>
+            <button type="submit" class="botao">Enviar</button>
+            <button type="reset" class="botao">Limpar</button>
+
+
+
+
+        </form>
+    </div>
+</body>
+</html>
